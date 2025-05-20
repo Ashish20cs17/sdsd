@@ -4,6 +4,7 @@ import styles from "./Section7.module.css";
 import SubjectButton from "./SubjectButton";
 import ContactForm from "./ContactForm1";
 import arrowImg from "./arrow.png";
+import logoImg from "./logo.png";
 
 
 function Section7() {
@@ -42,11 +43,13 @@ function Section7() {
                 <div className={styles.div6}>.</div>
                 <SubjectButton name="Coding" active={false} />
               </div>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/fbd857bd48d4b7a165771bf3fcb2d9418b3d09f9?placeholderIfAbsent=true&apiKey=771d35a4e8294f3083bdf0cbd6294e9e"
-                alt="Decorative illustration"
-                className={styles.img3}
-              />
+  <div className={styles.logoSection}>
+  <p className={styles.aboveLogoText}>Small Steps, Big Change</p>
+  <img src={logoImg} alt="Logo" className={styles.img3} />
+  <p className={styles.belowLogoText}>10 mins of daily maths worksheet a day</p>
+</div>
+
+
             </div>
           </div>
           <div className={styles.column2}>
