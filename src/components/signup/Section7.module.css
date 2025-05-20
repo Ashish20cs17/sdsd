@@ -2,23 +2,47 @@
 
 
 
+
 .logoSection {
-  text-align: center;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 580px; /* Increase this value as needed */
+  gap: 8px; /* Optional spacing between elements */
 }
 
 .aboveLogoText {
-  font-size: 28px;
-  font-weight: 600;
-  color: #0a0a0a;
-  margin-bottom: -40px;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+    position: relative;
+    top: 31px;
+
 }
 
 .belowLogoText {
-  font-size: 28px;
-  color: #0a0a0a;
-  margin-top: -40px;
+  font-size: 25px; /* Adjust as needed */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #333;
+  position: relative;
+  top: 10px; /* Move away from image */
 }
+
+
+.img3 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 0; /* Prevents inline spacing issues */
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 
@@ -52,11 +76,12 @@
 .coding{color:#999;background-color:#fff;border:2px solid #9996;border-radius:52px;align-self:stretch;gap:8px;width:152px;max-width:152px;min-height:52px;margin-top:auto;margin-bottom:auto;padding:14px 24px}
 @media (width<=991px){.coding{white-space:initial;padding-left:20px;padding-right:20px}}
 .img3 {
+      height: 343px;
     aspect-ratio: 1.06;
     object-fit: contain;
     object-position: center;
-    width: 78%;
-    margin-top: 7px;
+    width: 88%;
+    margin-top: 60px;
     margin-left: 94px;
     cursor: pointer;
 }
