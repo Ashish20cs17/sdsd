@@ -48,9 +48,9 @@
 
 .section7{overflow:hidden}
 .example04{max-width: 100%;
-        padding-left: 20px;
+        padding-left: 50px;
         padding-right: 20px;}
-@media (width<=991px){.example04{max-width:100%;padding-left:20px;padding-right:20px}}
+@media (width<=991px){.example04{max-width:80%;padding-left:50px;padding-right:20px}}
 .div{gap:20px;display:flex}
 @media (width<=991px){.div{flex-direction:column;align-items:stretch;gap:0}}
 .column{flex-direction:column;align-items:stretch;width:50%;margin-left:0;line-height:normal;display:flex}
