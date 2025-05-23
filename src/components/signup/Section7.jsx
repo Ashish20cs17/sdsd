@@ -1,64 +1,82 @@
 "use client";
-import React, { useState } from "react";
 import styles from "./Section7.module.css";
 import SubjectButton from "./SubjectButton";
 import ContactForm from "./ContactForm1";
 import arrowImg from "./arrow.png";
-import logoImg from "./logo.png";
-
+import SignupImage from "./SignupImage.png";
 
 function Section7() {
   return (
-    <section className={styles.section7}>
-      <div className={styles.example04}>
-        <div className={styles.div}>
-          <div className={styles.column}>
-            <div className={styles.div2}>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/0442a517a403251d5959637b0e2a64010cc28ce9?placeholderIfAbsent=true&apiKey=771d35a4e8294f3083bdf0cbd6294e9e"
-                alt="Decorative logo"
-                className={styles.img}
-              />
-              <div className={styles.motivationWrapper}>
-  <div>
-<div className={styles.motivationTextWrapper}>
-  <h2 className={styles.themoreyoupractice}>
+    <div className="container-fluid">
+      <div className="container">
+
+
+      <section className={styles.section7}>
+        <div className={styles.example04}>
+          <div className={styles.div}>
+            <div className={styles.column}>
+              <div className={styles.div2}>
+               <div className={styles.logo}> <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0442a517a403251d5959637b0e2a64010cc28ce9?placeholderIfAbsent=true&apiKey=771d35a4e8294f3083bdf0cbd6294e9e"
+                  alt="Decorative logo"
+                  className={styles.img}
+                />
+                </div>
+
+                <div className={styles.heroSection}>
+                  <div className={styles.leftCont3ent}>
+                    <div className={styles.motivationText}>
+  <h2>
     <span className={styles.boldText}>the more you </span>
     <span className={styles.highlightBlue}>practice!</span>
   </h2>
-  <h2 className={styles.thebetteryoubecome}>
+  <h2>
     <span className={styles.boldText}>the better you </span>
     <span className={styles.highlightLightBlue}>become!</span>
   </h2>
 </div>
 
-  </div>
-  <img src={arrowImg} alt="Arrow" className={styles.arrowImage} />
-</div>
+<img
+  src={arrowImg}
+  alt="Dotted Arrow"
+  className={styles.arrowOverlay}
+/>
 
-              <div className={styles.div3}>
-                <SubjectButton name="Math" active={true} />
-                <div className={styles.div5}>.</div>
-                <SubjectButton name="English" active={false} />
-                <div className={styles.div6}>.</div>
-                <SubjectButton name="Coding" active={false} />
+                  </div>
+                </div>
+
+                <div className={styles.subjectWrapper}>
+                  <SubjectButton name="Math" active={true} showLive />
+                  <div className={styles.divider}>•</div>
+                  <SubjectButton name="English" active={false} />
+                  <div className={styles.divider}>•</div>
+                  <SubjectButton name="Coding" active={false} />
+                </div>
+
+               <div>
+                  <img src={SignupImage} alt="Decorative illustration" className={styles.signupImages} />
+                </div>
+
               </div>
-  <div className={styles.logoSection}>
-  <p className={styles.aboveLogoText}>Small Steps, Big Change</p>
-  <img src={logoImg} alt="Logo" className={styles.img3} />
-  <p className={styles.belowLogoText}>10 mins of daily maths worksheet a day</p>
-</div>
-
-
+            </div>
+            <div className={styles.column2}>
+              <ContactForm />
             </div>
           </div>
-          <div className={styles.column2}>
-            <ContactForm />
-          </div>
         </div>
+      </section>
       </div>
-    </section>
+    </div>
   );
 }
 
 export default Section7;
+                {/* <div className={styles.signupIhmages}>
+           <img
+  src={SignupImage}
+  alt="Decorative illustration"
+  className={styles.imgh3}
+  style={{ height: '600px', width: '600px', objectFit: 'contain' }}
+/>
+
+                </div> */}
